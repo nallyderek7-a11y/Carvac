@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickClean Scheduler</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f6; display: flex; justify-content: center; padding: 20px; }
+        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { color: #2c3e50; text-align: center; }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #555; }
+        input, select { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; background: #3498db; color: white; border: none; padding: 15px; margin-top: 25px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>✨ Car Wash Pro</h2>
+    <form action="https://formspree.io/f/mykdargr" method="POST">
+        <label>Pick a Location</label>
+        <select name="location" required>
+            <option value="Home Driveway">My Home</option>
+            <option value="Office Parking">Office Parking</option>
+            <option value="Main Street Station">Main St. Station</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" name="date" required>
+
+        <label>Time</label>
+        <input type="time" name="time" required>
+
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="John Doe" required>
+
+        <button type="submit">Schedule Cleaning</button>
+    </form>
+</div>
+
+</body>
+</html>
